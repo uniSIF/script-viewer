@@ -1,0 +1,30 @@
+.toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--toggle-bg, #e0e0e0);
+  color: var(--toggle-color, #333);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  z-index: 1000;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
+}
+
+.toggle:focus {
+  outline: 2px solid var(--toggle-focus, #0066cc);
+  outline-offset: 2px;
+}
+
+.toggle:active {
+  transform: scale(0.95);
+}

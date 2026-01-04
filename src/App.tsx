@@ -4,12 +4,15 @@ import { DropZone } from './components/DropZone'
 import { ScriptList } from './components/ScriptList'
 import { FilterPanel } from './components/FilterPanel'
 import { ErrorList } from './components/ErrorList'
+import { ThemeToggle } from './components/ThemeToggle'
+import { useTheme } from './hooks/useTheme'
 import './App.css'
 
 function App() {
   const [files, setFiles] = useState<ScriptFile[]>([])
   const [selectedCharacters, setSelectedCharacters] = useState<Set<string>>(new Set())
   const [errors, setErrors] = useState<FileLoadError[]>([])
+  const { resolvedTheme, toggleTheme } = useTheme()
 
   const handleFilesLoaded = useCallback((newFiles: ScriptFile[]) => {
     setFiles((prev) => [...prev, ...newFiles])
@@ -41,6 +44,7 @@ function App() {
 
   return (
     <div className="app">
+      <ThemeToggle resolvedTheme={resolvedTheme} onToggle={toggleTheme} />
       <h1>Script Viewer</h1>
       <DropZone onFilesLoaded={handleFilesLoaded} onError={handleError} />
       <ErrorList errors={errors} onDismiss={handleDismissErrors} />
