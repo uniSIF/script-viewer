@@ -2,22 +2,12 @@
   flex: 1;
   overflow-y: auto;
   padding: 16px;
-  background: #f9fafb;
+  background: var(--script-list-bg);
 }
 
 .emptyMessage {
   text-align: center;
-  color: #6b7280;
+  color: var(--script-list-empty);
   font-size: 1rem;
   padding: 48px 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .scriptList {
-    background: #1a1a1a;
-  }
-
-  .emptyMessage {
-    color: #9ca3af;
-  }
 }

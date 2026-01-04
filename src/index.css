@@ -16,6 +16,43 @@
   --toggle-color: #fff;
   --toggle-focus: #66b3ff;
 
+  /* DropZone */
+  --dropzone-border: #555;
+  --dropzone-bg: #2d2d2d;
+  --dropzone-text: #9ca3af;
+  --dropzone-drag-border: #60a5fa;
+  --dropzone-drag-bg: #1e3a5f;
+  --dropzone-btn-bg: #3b82f6;
+  --dropzone-btn-hover: #2563eb;
+  --dropzone-btn-focus: #60a5fa;
+
+  /* FilterPanel */
+  --filter-border: #404040;
+  --filter-bg: #2d2d2d;
+  --filter-btn-border: #555;
+  --filter-btn-bg: #3a3a3a;
+  --filter-btn-text: #e0e0e0;
+  --filter-btn-hover: #4a4a4a;
+  --filter-btn-selected-bg: #3b82f6;
+  --filter-btn-selected-hover: #2563eb;
+  --filter-indicator: #60a5fa;
+  --filter-clear-text: #9ca3af;
+
+  /* ScriptList */
+  --script-list-bg: #1a1a1a;
+  --script-list-empty: #9ca3af;
+
+  /* ScriptItem */
+  --script-item-border: #404040;
+  --script-item-character: #60a5fa;
+  --script-item-text: rgba(255, 255, 255, 0.87);
+
+  /* FileSection */
+  --file-section-bg: #2d2d2d;
+  --file-section-shadow: rgba(0, 0, 0, 0.3);
+  --file-section-title: rgba(255, 255, 255, 0.87);
+  --file-section-border: #404040;
+
   color-scheme: dark;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -29,6 +66,43 @@
   --toggle-bg: #e0e0e0;
   --toggle-color: #333;
   --toggle-focus: #0066cc;
+
+  /* DropZone */
+  --dropzone-border: #ccc;
+  --dropzone-bg: #fafafa;
+  --dropzone-text: #666;
+  --dropzone-drag-border: #4a90d9;
+  --dropzone-drag-bg: #e8f4fd;
+  --dropzone-btn-bg: #4a90d9;
+  --dropzone-btn-hover: #357abd;
+  --dropzone-btn-focus: #4a90d9;
+
+  /* FilterPanel */
+  --filter-border: #e0e0e0;
+  --filter-bg: #fafafa;
+  --filter-btn-border: #ccc;
+  --filter-btn-bg: #fff;
+  --filter-btn-text: #333;
+  --filter-btn-hover: #f0f0f0;
+  --filter-btn-selected-bg: #1976d2;
+  --filter-btn-selected-hover: #1565c0;
+  --filter-indicator: #1976d2;
+  --filter-clear-text: #666;
+
+  /* ScriptList */
+  --script-list-bg: #f9fafb;
+  --script-list-empty: #6b7280;
+
+  /* ScriptItem */
+  --script-item-border: #eee;
+  --script-item-character: #2563eb;
+  --script-item-text: #1f2937;
+
+  /* FileSection */
+  --file-section-bg: #fff;
+  --file-section-shadow: rgba(0, 0, 0, 0.1);
+  --file-section-title: #374151;
+  --file-section-border: #e5e7eb;
 
   color-scheme: light;
   color: var(--text-color);
