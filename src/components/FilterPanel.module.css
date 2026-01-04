@@ -1,0 +1,106 @@
+.filterPanel {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fafafa;
+}
+
+.characterList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.characterButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.characterButton:hover {
+  background-color: #f0f0f0;
+}
+
+.characterButton.selected {
+  background-color: #1976d2;
+  color: #fff;
+  border-color: #1976d2;
+}
+
+.characterButton.selected:hover {
+  background-color: #1565c0;
+}
+
+.filterHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.filterIndicator {
+  font-size: 0.875rem;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.clearButton {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.clearButton:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  .filterPanel {
+    border-bottom-color: #404040;
+    background-color: #2d2d2d;
+  }
+
+  .characterButton {
+    border-color: #555;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+  }
+
+  .characterButton:hover {
+    background-color: #4a4a4a;
+  }
+
+  .characterButton.selected {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+  }
+
+  .characterButton.selected:hover {
+    background-color: #2563eb;
+  }
+
+  .filterIndicator {
+    color: #60a5fa;
+  }
+
+  .clearButton {
+    border-color: #555;
+    background-color: #3a3a3a;
+    color: #9ca3af;
+  }
+
+  .clearButton:hover {
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+  }
+}

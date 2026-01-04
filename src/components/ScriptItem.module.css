@@ -1,0 +1,36 @@
+.scriptItem {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.scriptItem:last-child {
+  border-bottom: none;
+}
+
+.character {
+  font-weight: bold;
+  color: #2563eb;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.text {
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .scriptItem {
+    border-bottom-color: #404040;
+  }
+
+  .character {
+    color: #60a5fa;
+  }
+
+  .text {
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
