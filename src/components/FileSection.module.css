@@ -1,32 +1,20 @@
 .fileSection {
   margin-bottom: 24px;
   padding: 16px;
-  background: #fff;
+  background: var(--file-section-bg);
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px var(--file-section-shadow);
 }
 
 .fileName {
   font-size: 1.1rem;
-  color: #374151;
+  color: var(--file-section-title);
   margin: 0 0 12px 0;
   padding-bottom: 8px;
-  border-bottom: 2px solid #e5e7eb;
+  border-bottom: 2px solid var(--file-section-border);
 }
 
 .dialogueList {
   display: flex;
   flex-direction: column;
-}
-
-@media (prefers-color-scheme: dark) {
-  .fileSection {
-    background: #2d2d2d;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  }
-
-  .fileName {
-    color: rgba(255, 255, 255, 0.87);
-    border-bottom-color: #404040;
-  }
 }

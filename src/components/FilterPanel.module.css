@@ -1,7 +1,7 @@
 .filterPanel {
   padding: 1rem;
-  border-bottom: 1px solid #e0e0e0;
-  background-color: #fafafa;
+  border-bottom: 1px solid var(--filter-border);
+  background-color: var(--filter-bg);
 }
 
 .characterList {
@@ -12,27 +12,27 @@
 
 .characterButton {
   padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--filter-btn-border);
   border-radius: 4px;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--filter-btn-bg);
+  color: var(--filter-btn-text);
   cursor: pointer;
   font-size: 0.875rem;
   transition: all 0.2s ease;
 }
 
 .characterButton:hover {
-  background-color: #f0f0f0;
+  background-color: var(--filter-btn-hover);
 }
 
 .characterButton.selected {
-  background-color: #1976d2;
+  background-color: var(--filter-btn-selected-bg);
   color: #fff;
-  border-color: #1976d2;
+  border-color: var(--filter-btn-selected-bg);
 }
 
 .characterButton.selected:hover {
-  background-color: #1565c0;
+  background-color: var(--filter-btn-selected-hover);
 }
 
 .filterHeader {
@@ -44,63 +44,22 @@
 
 .filterIndicator {
   font-size: 0.875rem;
-  color: #1976d2;
+  color: var(--filter-indicator);
   font-weight: 500;
 }
 
 .clearButton {
   padding: 0.25rem 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--filter-btn-border);
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--filter-btn-bg);
   cursor: pointer;
   font-size: 0.75rem;
-  color: #666;
+  color: var(--filter-clear-text);
   transition: all 0.2s ease;
 }
 
 .clearButton:hover {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-@media (prefers-color-scheme: dark) {
-  .filterPanel {
-    border-bottom-color: #404040;
-    background-color: #2d2d2d;
-  }
-
-  .characterButton {
-    border-color: #555;
-    background-color: #3a3a3a;
-    color: #e0e0e0;
-  }
-
-  .characterButton:hover {
-    background-color: #4a4a4a;
-  }
-
-  .characterButton.selected {
-    background-color: #3b82f6;
-    border-color: #3b82f6;
-  }
-
-  .characterButton.selected:hover {
-    background-color: #2563eb;
-  }
-
-  .filterIndicator {
-    color: #60a5fa;
-  }
-
-  .clearButton {
-    border-color: #555;
-    background-color: #3a3a3a;
-    color: #9ca3af;
-  }
-
-  .clearButton:hover {
-    background-color: #4a4a4a;
-    color: #e0e0e0;
-  }
+  background-color: var(--filter-btn-hover);
+  color: var(--filter-btn-text);
 }
